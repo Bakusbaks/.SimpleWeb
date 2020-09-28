@@ -1,0 +1,52 @@
+#values {
+  height: 100vh;
+}
+.head_title {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $h2;
+  font-weight: 100;
+}
+.row {
+  height: 36vh;
+  margin: 6rem 0;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+.square {
+  height: 100%;
+  width: 25%;
+  border-radius: 20px;
+  box-shadow: black 0px 0px 10px;
+  // background: rgba(255, 255, 227, 0.548);
+  transition: all 0.3s ease-out;
+  h3 {
+    font-size: $h3;
+    text-align: center;
+  }
+  .icontainer {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    i {
+      font-size: $h2;
+      color: $AlternateColor;
+    }
+  }
+  p {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: $h4;
+  }
+}
+.square:hover {
+  color: white;
+  background: $AlternateColor;
+  box-shadow: white 0px 0px 10px;
+}
+.square:hover i {
+  color: black;
+}

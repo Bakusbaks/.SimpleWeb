@@ -1,0 +1,74 @@
+header {
+  max-height: 100vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  h1 {
+    flex: 1;
+    font-size: $h1;
+    a {
+      color: black;
+    }
+  }
+}
+
+.nav-list ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  font-size: $FontNormal;
+  li {
+    padding: 0 1rem;
+    justify-content: space-between;
+    a {
+      color: black;
+    }
+    a:hover {
+      color: white;
+      text-shadow: black 0px 0px 7px;
+    }
+  }
+}
+.home {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+}
+.pc_mac {
+  position: relative;
+  img {
+    position: absolute;
+    right: -13%;
+    top: 12rem;
+    height: 60rem;
+  }
+}
+.home_container {
+  font-size: $FontNormal;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 24rem 0;
+  .meetus {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: flex-end;
+    align-self: stretch;
+  }
+}
+.meetus a {
+  text-align: center;
+  padding: 1.6rem;
+  background: $AlternateColor;
+  color: white;
+  border-radius: 50px;
+  min-height: 2rem;
+  min-width: 10rem;
+}
+.meetus a:hover {
+  color: $AlternateColor;
+  background: white;
+  box-shadow: $AlternateColor 0px 0px 5px;
+}

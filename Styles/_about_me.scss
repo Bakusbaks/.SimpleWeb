@@ -1,0 +1,51 @@
+#about_me {
+  min-height: 60vh;
+  margin-top: 5rem;
+}
+.about {
+  margin: 3rem 0 15rem;
+  display: flex;
+  height: 45vh;
+  border: 1px solid black;
+  border-radius: 20px;
+  &_image {
+    min-width: 35%;
+    height: 100%;
+    margin: auto;
+    background: linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+      url("/Images/2n.jpg");
+    background-position: top;
+    background-size: cover;
+    transition: all 0.2s ease;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .about_image:hover {
+    background: linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+      url("/Images/7.jpg");
+    background-position: top;
+    background-size: cover;
+  }
+
+  .about_description {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &_work,
+    &_life {
+      font-size: $h4;
+      margin: 2rem;
+      text-align: justify;
+    }
+    i {
+      display: inline-block;
+      color: black;
+      font-size: $h1;
+    }
+  }
+  .about_icons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

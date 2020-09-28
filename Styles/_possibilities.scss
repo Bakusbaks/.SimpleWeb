@@ -1,0 +1,80 @@
+.grid_boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "grid_box1 grid_box1 grid_box2"
+    "grid_box3 grid_box4 grid_box2";
+}
+.grid_box1 {
+  grid-area: grid_box1;
+  height: 20rem;
+  background: linear-gradient(right, $AlternateColor, rgba(0, 0, 0, 0.3)),
+    url("/Images/office.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  h3 {
+    color: white;
+    font-size: $h3;
+    font-weight: 400;
+  }
+}
+
+.grid_box2 {
+  background-color: rgb(211, 166, 166);
+  grid-area: grid_box2;
+  background: linear-gradient(left, $AlternateColor, rgba(0, 0, 0, 0.3)),
+    url("/Images/rocket.png");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  h3 {
+    color: white;
+    font-size: $h3;
+    font-weight: 400;
+  }
+}
+
+.grid_box3 {
+  background-color: rgb(163, 126, 160);
+  grid-area: grid_box3;
+  background: linear-gradient(bottom, $AlternateColor, rgba(0, 0, 0, 0.3)),
+    url("/Images/office.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  height: 20rem;
+  h3 {
+    color: white;
+    font-size: $h3;
+    font-weight: 400;
+  }
+}
+
+.grid_box4 {
+  background-color: rgb(139, 163, 132);
+  grid-area: grid_box4;
+  background: linear-gradient(left, rgba(0, 0, 0, 0.3), $AlternateColor),
+    url("/Images/office.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  height: 20rem;
+  h3 {
+    color: white;
+    font-size: $h3;
+    font-weight: 400;
+  }
+}
+
+.grid_box {
+  padding: 2rem;
+  text-align: center;
+  margin: 3rem;
+  border-radius: 20px;
+}

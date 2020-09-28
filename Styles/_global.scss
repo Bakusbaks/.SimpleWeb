@@ -1,0 +1,31 @@
+$FontNormal: 2.2rem;
+$FontBig: 3rem;
+$h1: 3.2rem;
+$h2: 2.9rem;
+$h3: 2.5rem;
+$h4: 2rem;
+$p: 1.6rem;
+$AlternateColor: rgb(185, 57, 57);
+
+html,
+body {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}

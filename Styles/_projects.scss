@@ -1,0 +1,87 @@
+.row_squares {
+  height: 36vh;
+  margin: 6rem 0;
+  align-items: center;
+  display: flex;
+}
+.big_square {
+  height: 100%;
+  width: 40%;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 20px;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  background-image: linear-gradient(
+      90deg,
+      transparent 79px,
+      #abced4 79px,
+      #abced4 81px,
+      transparent 81px
+    ),
+    linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+  p {
+    padding-left: 8rem;
+  }
+  p {
+    font-size: $h4;
+  }
+  .small_square {
+    width: 45%;
+    font-size: $p;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.big_square_for_smalls {
+  height: 100%;
+  width: 40%;
+  margin: 0 auto;
+
+  color: black;
+  text-align: center;
+  display: flex;
+  p {
+    font-size: $h4;
+  }
+  .small_square {
+    background: linear-gradient(
+      top,
+      rgba(57, 87, 185, 0.8),
+      rgba(255, 46, 46, 0.392)
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45%;
+    font-size: $p;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: all 0.8s ease;
+    p {
+      padding: 0 1rem;
+    }
+  }
+  .small_square:hover {
+    background: linear-gradient(
+        top,
+        rgba(85, 63, 63, 0.512),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url("/Images/rocket.png");
+    background-size: cover;
+    color: white;
+    cursor: pointer;
+  }
+}

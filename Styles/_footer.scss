@@ -1,0 +1,29 @@
+footer {
+  background: black;
+  display: flex;
+}
+.container_footer {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  color: white;
+  h2 {
+    font-size: $h3;
+    flex: 1;
+  }
+  p a {
+    font-size: $h4;
+    color: $AlternateColor;
+  }
+  p a:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .nav-list a {
+    color: white;
+  }
+  .nav-list a:hover {
+    color: $AlternateColor;
+  }
+}
